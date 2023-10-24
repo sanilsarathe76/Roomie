@@ -42,7 +42,7 @@ class TabBarViewController: UIViewController {
     
     var profileVC: ProfileViewController = {
         let storyboard = UIStoryboard(name: CustomTabBarStoryboard.profile.rawValue, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: ProfileViewController.identitfier) as! ProfileViewController
+        return storyboard.instantiateViewController(withIdentifier: ProfileViewController.identifier) as! ProfileViewController
     }()
     
     var mapVC: MapViewController = {
@@ -52,7 +52,7 @@ class TabBarViewController: UIViewController {
     
     var tabBarItems = [
         TabBarItem(title: "Home", image: "Home"),
-        TabBarItem(title: "Profile", image: "Profile"),
+        TabBarItem(title: "Gallary", image: "Gallery"),
         TabBarItem(title: "Map", image: "Map"),
     ]
     
@@ -117,9 +117,10 @@ extension TabBarViewController: UICollectionViewDataSource, UICollectionViewDele
             view.frame = self.containerView.frame
             self.containerView.addSubview(view)
         case 1:
-            guard let view = self.profileVC.view else { return }
-            view.frame = self.containerView.frame
-            self.containerView.addSubview(view)
+//            guard let view = self.profileVC.view else { return }
+//            view.frame = self.containerView.frame
+//            self.containerView.addSubview(view)
+            break
         case 2:
             guard let view = self.mapVC.view else { return }
             view.frame = self.containerView.frame

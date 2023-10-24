@@ -32,6 +32,12 @@
 		70D011682A97671300713FBF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D011542A97671300713FBF /* Profile.storyboard */; };
 		70D011692A97671300713FBF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D011552A97671300713FBF /* Home.storyboard */; };
 		70D0116A2A97671300713FBF /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D011562A97671300713FBF /* TabBar.storyboard */; };
+		70D011762A9896B500713FBF /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D011752A9896B500713FBF /* ExploreHeaderView.swift */; };
+		70D011782A9896C700713FBF /* ExploreHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D011772A9896C700713FBF /* ExploreHeaderView.xib */; };
+		70D0117B2A9898E900713FBF /* HeaderViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D011792A9898E900713FBF /* HeaderViewTableViewCell.swift */; };
+		70D0117C2A9898E900713FBF /* HeaderViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D0117A2A9898E900713FBF /* HeaderViewTableViewCell.xib */; };
+		70D0117F2A9899B200713FBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0117E2A9899B200713FBF /* Constants.swift */; };
+		70D011812A989AA500713FBF /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D011802A989AA500713FBF /* Storyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		70D011542A97671300713FBF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		70D011552A97671300713FBF /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		70D011572A97671300713FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
+		70D011752A9896B500713FBF /* ExploreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHeaderView.swift; sourceTree = "<group>"; };
+		70D011772A9896C700713FBF /* ExploreHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreHeaderView.xib; sourceTree = "<group>"; };
+		70D011792A9898E900713FBF /* HeaderViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewTableViewCell.swift; sourceTree = "<group>"; };
+		70D0117A2A9898E900713FBF /* HeaderViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewTableViewCell.xib; sourceTree = "<group>"; };
+		70D0117E2A9899B200713FBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70D011802A989AA500713FBF /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		70D0111A2A9766D500713FBF /* Roomie */ = {
 			isa = PBXGroup;
 			children = (
+				70D0117D2A98999400713FBF /* Constants */,
 				70D011502A97671300713FBF /* Enum */,
 				70D0113E2A97671300713FBF /* ExtraClasses */,
 				70D011392A97671300713FBF /* Font */,
@@ -170,6 +183,8 @@
 		70D011492A97671300713FBF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				70D011722A9895C100713FBF /* HeaderView */,
+				70D0116B2A988B4700713FBF /* TableViewXIB */,
 				70D0114A2A97671300713FBF /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -197,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				70D011512A97671300713FBF /* CustomTabBarStoryboard.swift */,
+				70D011802A989AA500713FBF /* Storyboard.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -210,6 +226,32 @@
 				70D011562A97671300713FBF /* TabBar.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		70D0116B2A988B4700713FBF /* TableViewXIB */ = {
+			isa = PBXGroup;
+			children = (
+				70D011792A9898E900713FBF /* HeaderViewTableViewCell.swift */,
+				70D0117A2A9898E900713FBF /* HeaderViewTableViewCell.xib */,
+			);
+			path = TableViewXIB;
+			sourceTree = "<group>";
+		};
+		70D011722A9895C100713FBF /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				70D011752A9896B500713FBF /* ExploreHeaderView.swift */,
+				70D011772A9896C700713FBF /* ExploreHeaderView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		70D0117D2A98999400713FBF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				70D0117E2A9899B200713FBF /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +323,10 @@
 				70D0116A2A97671300713FBF /* TabBar.storyboard in Resources */,
 				70D0115B2A97671300713FBF /* AgeoPersonalUse.otf in Resources */,
 				70D011672A97671300713FBF /* Map.storyboard in Resources */,
+				70D011782A9896C700713FBF /* ExploreHeaderView.xib in Resources */,
 				70D011652A97671300713FBF /* TabBarCell.xib in Resources */,
 				70D011232A9766D500713FBF /* Main.storyboard in Resources */,
+				70D0117C2A9898E900713FBF /* HeaderViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +341,12 @@
 				70D0111C2A9766D500713FBF /* AppDelegate.swift in Sources */,
 				70D011602A97671300713FBF /* HomeTemplateCollectionViewCell.swift in Sources */,
 				70D011642A97671300713FBF /* TabBarCell.swift in Sources */,
+				70D011812A989AA500713FBF /* Storyboard.swift in Sources */,
+				70D011762A9896B500713FBF /* ExploreHeaderView.swift in Sources */,
+				70D0117F2A9899B200713FBF /* Constants.swift in Sources */,
 				70D0111E2A9766D500713FBF /* SceneDelegate.swift in Sources */,
 				70D0115D2A97671300713FBF /* UIView+Extension.swift in Sources */,
+				70D0117B2A9898E900713FBF /* HeaderViewTableViewCell.swift in Sources */,
 				70D0115C2A97671300713FBF /* UIColor+Extension.swift in Sources */,
 				70D011662A97671300713FBF /* CustomTabBarStoryboard.swift in Sources */,
 				70D011622A97671300713FBF /* ProfileViewController.swift in Sources */,

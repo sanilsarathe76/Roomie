@@ -36,10 +36,6 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         collectionView.addGestureRecognizer(longPressGesture)
     }
     
-    //    var images = ["Image1", "Image2", "Image3", "Image4", "Image5", "Image1", "Image2", "Image3", "Image4", "Image5"]
-    //
-    //    var label = ["Living Room", "Dining Room", "Bed Room", "Kitchen", "Study Room", "Living Room", "Dining Room", "Bed Room", "Kitchen", "Study Room"]
-    
     var cardsData = [
         ShowData(images: "Image1", labels: "Living Room"),
         ShowData(images: "Image2", labels: "Dining Room"),
@@ -58,6 +54,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         DispatchQueue.main.async {
             self.collectionView.scrollToItem(at: IndexPath(item: self.currentImage, section: 0), at: .centeredHorizontally, animated: true)
         }
+    }
+    
+    @IBAction func onClickProfile(_ sender: UIButton) {
+        let vc = getVC(storyboard: .profile, vcIdentifier: ProfileViewController.identifier) as! ProfileViewController
+        pushView(vc)
     }
     
     @IBAction func onClickRight(_ sender: Any) {
@@ -101,7 +102,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
                     UIView.animate(withDuration: 0.5) {
                         self.collectionView.layoutIfNeeded()
                         currentCell.setUpHorizonatalLayout()
-                        //                        currentCell.gradient()
+                        //currentCell.gradient()
                     }
                 }
             }

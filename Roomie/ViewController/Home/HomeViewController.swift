@@ -26,10 +26,6 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         registerXib()
         topImage.layer.cornerRadius = 25
-        //        currentImage = images.count / 2
-        //        DispatchQueue.main.async {
-        //            self.collectionView.scrollToItem(at: IndexPath(item: self.currentImage, section: 0), at: .centeredHorizontally, animated: true)
-        //        }
         
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
         longPressGesture.minimumPressDuration = 0.3

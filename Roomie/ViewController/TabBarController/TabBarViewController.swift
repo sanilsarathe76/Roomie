@@ -91,7 +91,7 @@ extension TabBarViewController: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let index = indexPath.row
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TabBarCell.identifier, for: indexPath) as! TabBarCell
-        cell.configure(item: tabBarItems[indexPath.row], isSelected: indexPath.row == selectedItem)
+        cell.configure(item: tabBarItems[indexPath.row], isSelected: index == selectedItem)
         cell.parentView.backgroundColor = selectedItem == index ? UIColor(hex: "083d20") : .clear
         return cell
     }
@@ -117,9 +117,6 @@ extension TabBarViewController: UICollectionViewDataSource, UICollectionViewDele
             view.frame = self.containerView.frame
             self.containerView.addSubview(view)
         case 1:
-//            guard let view = self.profileVC.view else { return }
-//            view.frame = self.containerView.frame
-//            self.containerView.addSubview(view)
             break
         case 2:
             guard let view = self.mapVC.view else { return }

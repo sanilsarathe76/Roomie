@@ -32,6 +32,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         collectionView.addGestureRecognizer(longPressGesture)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+    }
+    
     var cardsData = [
         ShowData(images: "Image1", labels: "Living Room"),
         ShowData(images: "Image2", labels: "Dining Room"),

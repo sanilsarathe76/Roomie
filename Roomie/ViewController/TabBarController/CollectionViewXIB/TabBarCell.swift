@@ -23,6 +23,7 @@ class TabBarCell: UICollectionViewCell {
     func configure(item: TabBarItem, isSelected: Bool) {
         tabBarLabel.text = item.title
         imageView.image = UIImage(named: item.image)
+        parentView.backgroundColor = isSelected == true ? UIColor(hex: "083d20") : .clear
         if isSelected {
             setSelectedUI()
         } else {

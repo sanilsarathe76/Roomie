@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -18,16 +22,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EkY-fH-FOs">
-                                <rect key="frame" x="10" y="79" width="373" height="50"/>
+                                <rect key="frame" x="20" y="99" width="353" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roomie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e1-mf-oXT">
-                                        <rect key="frame" x="0.0" y="0.0" width="323" height="50"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                        <color key="textColor" red="0.031372549019607843" green="0.23921568627450979" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fwO-9S-Gaz">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roomie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e1-mf-oXT">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                <color key="textColor" red="0.031372549019607843" green="0.23921568627450979" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Sangraj Interiors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzL-Ct-snl">
+                                                <rect key="frame" x="0.0" y="36.666666666666657" width="303" height="13.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="10"/>
+                                                <color key="textColor" red="0.031372549020000001" green="0.23921568630000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="D56-ys-uuk"/>
+                                        </constraints>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-CZ-J00">
-                                        <rect key="frame" x="323" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="303" y="0.0" width="50" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sanil" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-KK-ydq">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -62,7 +80,7 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PSb-SY-Elk">
-                                <rect key="frame" x="0.0" y="149" width="393" height="649"/>
+                                <rect key="frame" x="0.0" y="169" width="393" height="629"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xTQ-Gc-djj">
                                     <size key="itemSize" width="128" height="128"/>
@@ -82,7 +100,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeL-ai-Ssi">
-                                <rect key="frame" x="0.0" y="149" width="50" height="649"/>
+                                <rect key="frame" x="0.0" y="169" width="50" height="629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="O4j-rm-9c0"/>
                                 </constraints>
@@ -92,7 +110,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urb-dN-bYv">
-                                <rect key="frame" x="343" y="149" width="50" height="649"/>
+                                <rect key="frame" x="343" y="169" width="50" height="629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="ycD-9p-hUN"/>
                                 </constraints>
@@ -103,18 +121,18 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.82800591852247107" green="0.82800591852247107" blue="0.82800591852247107" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Urb-dN-bYv" firstAttribute="trailing" secondItem="PSb-SY-Elk" secondAttribute="trailing" id="3HH-Pp-Yze"/>
                             <constraint firstItem="eeL-ai-Ssi" firstAttribute="top" secondItem="PSb-SY-Elk" secondAttribute="top" id="3rv-He-2Tr"/>
                             <constraint firstItem="eeL-ai-Ssi" firstAttribute="bottom" secondItem="PSb-SY-Elk" secondAttribute="bottom" id="BOB-jE-LtD"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PSb-SY-Elk" secondAttribute="bottom" constant="20" id="FkK-yN-lMV"/>
                             <constraint firstItem="PSb-SY-Elk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Fvu-dP-Xtg"/>
-                            <constraint firstItem="EkY-fH-FOs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="GfR-TK-lJh"/>
+                            <constraint firstItem="EkY-fH-FOs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="GfR-TK-lJh"/>
                             <constraint firstItem="eeL-ai-Ssi" firstAttribute="leading" secondItem="PSb-SY-Elk" secondAttribute="leading" id="M3V-bQ-vzG"/>
                             <constraint firstItem="Urb-dN-bYv" firstAttribute="top" secondItem="PSb-SY-Elk" secondAttribute="top" id="X9S-Kd-D0W"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EkY-fH-FOs" secondAttribute="trailing" constant="10" id="YiI-Yd-atw"/>
-                            <constraint firstItem="EkY-fH-FOs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="hgz-jr-2xG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EkY-fH-FOs" secondAttribute="trailing" constant="20" id="YiI-Yd-atw"/>
+                            <constraint firstItem="EkY-fH-FOs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="hgz-jr-2xG"/>
                             <constraint firstItem="Urb-dN-bYv" firstAttribute="bottom" secondItem="PSb-SY-Elk" secondAttribute="bottom" id="i5a-ZS-mZb"/>
                             <constraint firstItem="PSb-SY-Elk" firstAttribute="top" secondItem="EkY-fH-FOs" secondAttribute="bottom" constant="20" id="mTr-XV-NcI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PSb-SY-Elk" secondAttribute="trailing" id="pzc-WE-y9H"/>

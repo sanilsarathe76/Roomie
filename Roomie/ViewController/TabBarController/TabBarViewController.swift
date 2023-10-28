@@ -23,10 +23,7 @@ class TabBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCollectionView()
-        guard let view = homeVC.view else {return}
-        view.frame = containerView.frame
-        setUpTabBarContainerView()
-        containerView.addSubview(view)
+        loadInitialView()
     }
     
     override func viewDidLayoutSubviews() {
@@ -55,6 +52,13 @@ class TabBarViewController: UIViewController {
         TabBarItem(title: "Gallary", image: "Gallery"),
         TabBarItem(title: "Map", image: "Map"),
     ]
+    
+    func loadInitialView() {
+        guard let view = homeVC.view else { return }
+        view.frame = containerView.frame
+        setUpTabBarContainerView()
+        containerView.addSubview(view)
+    }
     
     func setUpTabBarContainerView() {
         tabBarContainerView.layer.cornerRadius = 20
@@ -92,7 +96,6 @@ extension TabBarViewController: UICollectionViewDataSource, UICollectionViewDele
         let index = indexPath.row
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TabBarCell.identifier, for: indexPath) as! TabBarCell
         cell.configure(item: tabBarItems[indexPath.row], isSelected: index == selectedItem)
-        cell.parentView.backgroundColor = selectedItem == index ? UIColor(hex: "083d20") : .clear
         return cell
     }
     
@@ -111,6 +114,7 @@ extension TabBarViewController: UICollectionViewDataSource, UICollectionViewDele
             lastSelectedCell.setUnselectedUI()
             currentCell.setSelectedUI()
         }
+        
         switch indexPath.row {
         case 0:
             guard let view = self.homeVC.view else { return }

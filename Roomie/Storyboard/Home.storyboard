@@ -47,7 +47,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-CZ-J00">
                                         <rect key="frame" x="303" y="0.0" width="50" height="50"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sanil" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-KK-ydq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-KK-ydq">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="6fa-JT-gdd"/>
@@ -149,6 +149,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Sanil" width="604.66668701171875" height="556.33331298828125"/>
+        <image name="listIcon" width="170.66667175292969" height="170.66667175292969"/>
     </resources>
 </document>

@@ -100,7 +100,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
                 print("IndexPath: \(indexPath)")
                 DispatchQueue.main.async {
                     self.collectionView.collectionViewLayout.invalidateLayout()
-                    UIView.animate(withDuration: 0.5) {
+                    UIView.animate(withDuration: 0.3) {
                         self.collectionView.layoutIfNeeded()
                         currentCell.setUpHorizonatalLayout()
                         //currentCell.gradient()
@@ -114,11 +114,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
             DispatchQueue.main.async {
                 let currentCell = self.collectionView.cellForItem(at: indexPath) as! HomeTemplateCollectionViewCell
                 self.collectionView.collectionViewLayout.invalidateLayout()
-                UIView.animate(withDuration: 0.5) {
+                UIView.animate(withDuration: 0.3) {
                     self.collectionView.layoutIfNeeded()
                     currentCell.setUpVerticalLayout()
                 } completion: { _ in
-                    //                    currentCell.gradient()
+                    //currentCell.gradient()
                 }
             }
         default:

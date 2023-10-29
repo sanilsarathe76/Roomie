@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06349D132AEE120D00A4C50E /* Gallary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06349D122AEE120D00A4C50E /* Gallary.storyboard */; };
+		06349D162AEE15CE00A4C50E /* GallaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06349D152AEE15CE00A4C50E /* GallaryViewController.swift */; };
+		06349D192AEE17CA00A4C50E /* GallaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06349D172AEE17CA00A4C50E /* GallaryTableViewCell.swift */; };
+		06349D1A2AEE17CA00A4C50E /* GallaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06349D182AEE17CA00A4C50E /* GallaryTableViewCell.xib */; };
 		06CB27D72AED8ADA004CE8EF /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06CB27B92AED8ADA004CE8EF /* SF-Pro-Display-Thin.otf */; };
 		06CB27D82AED8ADA004CE8EF /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06CB27BA2AED8ADA004CE8EF /* SF-Pro-Display-SemiboldItalic.otf */; };
 		06CB27D92AED8ADA004CE8EF /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06CB27BB2AED8ADA004CE8EF /* SF-Pro-Text-Heavy.otf */; };
@@ -67,6 +71,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06349D122AEE120D00A4C50E /* Gallary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallary.storyboard; sourceTree = "<group>"; };
+		06349D152AEE15CE00A4C50E /* GallaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewController.swift; sourceTree = "<group>"; };
+		06349D172AEE17CA00A4C50E /* GallaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryTableViewCell.swift; sourceTree = "<group>"; };
+		06349D182AEE17CA00A4C50E /* GallaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GallaryTableViewCell.xib; sourceTree = "<group>"; };
 		06CB27B92AED8ADA004CE8EF /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
 		06CB27BA2AED8ADA004CE8EF /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		06CB27BB2AED8ADA004CE8EF /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
@@ -139,6 +147,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06349D142AEE15A400A4C50E /* Gallary */ = {
+			isa = PBXGroup;
+			children = (
+				06349D152AEE15CE00A4C50E /* GallaryViewController.swift */,
+				06349D1B2AEE17E300A4C50E /* TableViewXIB */,
+			);
+			path = Gallary;
+			sourceTree = "<group>";
+		};
+		06349D1B2AEE17E300A4C50E /* TableViewXIB */ = {
+			isa = PBXGroup;
+			children = (
+				06349D182AEE17CA00A4C50E /* GallaryTableViewCell.xib */,
+				06349D172AEE17CA00A4C50E /* GallaryTableViewCell.swift */,
+			);
+			path = TableViewXIB;
+			sourceTree = "<group>";
+		};
 		06CB27B82AED8ADA004CE8EF /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +250,7 @@
 		70D011412A97671300713FBF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				06349D142AEE15A400A4C50E /* Gallary */,
 				70D011422A97671300713FBF /* Home */,
 				70D011472A97671300713FBF /* Map */,
 				70D011492A97671300713FBF /* Profile */,
@@ -302,6 +329,7 @@
 				70D011542A97671300713FBF /* Profile.storyboard */,
 				70D011552A97671300713FBF /* Home.storyboard */,
 				70D011562A97671300713FBF /* TabBar.storyboard */,
+				06349D122AEE120D00A4C50E /* Gallary.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -413,6 +441,7 @@
 				70D0115F2A97671300713FBF /* HomeTemplateCollectionViewCell.xib in Resources */,
 				70D0116A2A97671300713FBF /* TabBar.storyboard in Resources */,
 				06CB27DA2AED8ADA004CE8EF /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				06349D132AEE120D00A4C50E /* Gallary.storyboard in Resources */,
 				06CB27EB2AED8ADA004CE8EF /* SF-Pro-Display-Black.otf in Resources */,
 				70D011672A97671300713FBF /* Map.storyboard in Resources */,
 				06CB27F42AED8ADA004CE8EF /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
@@ -422,6 +451,7 @@
 				06CB27D72AED8ADA004CE8EF /* SF-Pro-Display-Thin.otf in Resources */,
 				70D011652A97671300713FBF /* TabBarCell.xib in Resources */,
 				06CB27F02AED8ADA004CE8EF /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				06349D1A2AEE17CA00A4C50E /* GallaryTableViewCell.xib in Resources */,
 				70D011232A9766D500713FBF /* Main.storyboard in Resources */,
 				06CB27EE2AED8ADA004CE8EF /* SF-Pro-Text-Semibold.otf in Resources */,
 				06CB27E42AED8ADA004CE8EF /* SF-Pro-Text-Bold.otf in Resources */,
@@ -441,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06349D192AEE17CA00A4C50E /* GallaryTableViewCell.swift in Sources */,
 				70D011202A9766D500713FBF /* ViewController.swift in Sources */,
 				70D0111C2A9766D500713FBF /* AppDelegate.swift in Sources */,
 				70D011602A97671300713FBF /* HomeTemplateCollectionViewCell.swift in Sources */,
@@ -448,6 +479,7 @@
 				70D011812A989AA500713FBF /* Storyboard.swift in Sources */,
 				70D011762A9896B500713FBF /* ExploreHeaderView.swift in Sources */,
 				70D0117F2A9899B200713FBF /* Constants.swift in Sources */,
+				06349D162AEE15CE00A4C50E /* GallaryViewController.swift in Sources */,
 				70D0111E2A9766D500713FBF /* SceneDelegate.swift in Sources */,
 				70D0115D2A97671300713FBF /* UIView+Extension.swift in Sources */,
 				70D0117B2A9898E900713FBF /* HeaderViewTableViewCell.swift in Sources */,

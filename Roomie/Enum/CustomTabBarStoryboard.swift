@@ -12,4 +12,5 @@ enum CustomTabBarStoryboard: String {
     case home = "Home"
     case profile = "Profile"
     case map = "Map"
+    case gallary = "Gallary"
 }

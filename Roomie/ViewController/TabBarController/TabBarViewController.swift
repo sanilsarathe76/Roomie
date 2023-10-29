@@ -37,6 +37,11 @@ class TabBarViewController: UIViewController {
         return storyboard.instantiateViewController(withIdentifier: HomeViewController.identitfier) as! HomeViewController
     }()
     
+    var gallaryVC: GallaryViewController = {
+        let storyboard = UIStoryboard(name: CustomTabBarStoryboard.gallary.rawValue, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: GallaryViewController.identifier) as! GallaryViewController
+    }()
+    
     var profileVC: ProfileViewController = {
         let storyboard = UIStoryboard(name: CustomTabBarStoryboard.profile.rawValue, bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: ProfileViewController.identifier) as! ProfileViewController
@@ -121,7 +126,9 @@ extension TabBarViewController: UICollectionViewDataSource, UICollectionViewDele
             view.frame = self.containerView.frame
             self.containerView.addSubview(view)
         case 1:
-            break
+            guard let view = self.gallaryVC.view else { return }
+            view.frame = self.containerView.frame
+            self.containerView.addSubview(view)
         case 2:
             guard let view = self.mapVC.view else { return }
             view.frame = self.containerView.frame

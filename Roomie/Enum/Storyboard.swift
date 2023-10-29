@@ -9,7 +9,7 @@ import Foundation
 
 enum Storyboards: String {
     case profile = "Profile"
-    func board()->String {
+    func board() -> String {
         return self.rawValue
     }
 }
